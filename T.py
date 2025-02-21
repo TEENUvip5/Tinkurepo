@@ -145,7 +145,7 @@ def process_bgmi_command(message):
 async def run_bgmi_command_async(target_ip, target_port, duration):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./raja {target_ip} {target_port} {duration} {900}",
+            f"./igl {target_ip} {target_port} {duration} {900}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
